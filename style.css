@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.profile {
+     display: flex;
+}
+
+img {
+    height: 100vh;
+    width: 800px;
+}
+
+.profile-navbar {
+    display: flex;
+    background-color: black;
+    height: 60px;
+    width: 700px;
+    justify-content: flex-end;
+}
+
+.nav {
+    color: white;
+    font-weight: 500;
+    margin-right: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.nav:hover {
+    color: red;
+    text-decoration: red underline;
+}
+
+.p1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+}
+
+.p2 {
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+}
+
+span {
+    color: red;
+}
+
+.p3 {
+    color: white;
+}
+
+.profile-body {
+    margin-top: 200px;
+}
+
+button {
+    color: red;
+    background-color: black;
+    border: 2px solid red;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.profile-icon {
+    display: flex;
+}
+
+.icon {
+    font-size: 2rem;
+    color: red;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid red;
+    margin-right: 20px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+    color: black;
+    box-shadow: 2px 2px 20px red;
+}
+
+.icon:hover {
+    background-color: red;
+    color: black;
+    transform: scale(1.15);
+    box-shadow: 2px 2px 20px red;
+}
+
+.name {
+    color: red;
+    font-size: 2.5rem;
+    font-weight: 600;
+    transform: translate(200px,150px);
+}
+
+@media (max-width: 500px){
+    .name {
+        transform: translate(20px,20px);
+    }
+    img {
+        height: 400px;
+        width: 400px;
+        position: absolute;
+        z-index: -1;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        margin-bottom: 20px;
+    }
+    .profile-body {
+        margin-left: 20px;
+        margin-top: 400px;
+    }
+    .profile-navbar {
+        display: none;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1200px){
+    .name {
+        transform: translate(40px,40px);
+    }
+    img {
+        height: 80vh;
+        width: 90vw;
+        position: absolute;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
+    }
+    .profile {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        margin-bottom: 60px;
+    }
+    .profile-body {
+        margin-left: 60px;
+        margin-top: 500px;
+    }
+    .profile-navbar {
+        display: none;
+    }
+}
