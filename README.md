@@ -15,4 +15,8 @@ Uses responsive layouts
 HTML5
 CSS3
 
+<<<<<<< HEAD
 This is my first responsive website project as I continue learning web development.
+=======
+This is my first responsive website project as I continue learning web development.
+>>>>>>> 2e65201afaa67871873ac7d32c285db91d077971
